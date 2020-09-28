@@ -4,4 +4,8 @@
 a. Synonyms: added ingredient addition extra add-onsupplement
 accompaniment preservative flavor enhancercoloring E-number
 
-3. 
+3. ranging -> vary fluctuate differ
+
+4. overhaul -> take apart (a piece of machinery or equipment) in order to examine it and repair it if necessary.
+
+5. 

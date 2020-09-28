@@ -16,3 +16,7 @@ docker run -v $(pwd)/index.html:/usr/share/nginx/html/index.html -p 1000:80 -d n
 
 6. Docker remove all dangling volumes
 docker volume rm `docker volume ls -q -f dangling=true`
+
+7. docker build --progress=plain .
+
+8. 
