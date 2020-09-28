@@ -30,4 +30,12 @@ a. Not suitable for heavy computational tasks
 b. Dealing with relational databases is not a good option for Node.js
 c. Since Node.js is single-threaded, CPU intensive tasks is not its strong suit
 
-7. 
+7. Node.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. This allows Node.js to be very performant.
+
+8. A Node.js app is run in a single process, without creating a new thread for every request.
+
+9. Express: It provides one of the most simple yet powerful ways to create a web server. Its minimalist approach, unopinionated, focused on the core features of a server, is key to its success.
+
+10. JavaScript is internally compiled by V8 with just-in-time (JIT) compilation to speed up the execution.
+
+11. 
