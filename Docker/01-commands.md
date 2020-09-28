@@ -19,4 +19,3 @@ docker volume rm `docker volume ls -q -f dangling=true`
 
 7. docker build --progress=plain .
 
-8. 
