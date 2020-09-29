@@ -1,1 +1,1 @@
-https://docs.microsoft.com/en-in/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java
+https://docs.microsoft.com/en-in/azure/devops/pipelines/ecosystems/deploy-linux-vm?view=azure-devops&tabs=java-script

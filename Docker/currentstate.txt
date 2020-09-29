@@ -1,1 +1,1 @@
-https://docs.docker.com/develop/develop-images/multistage-build/
+https://docs.docker.com/develop/develop-images/baseimages/

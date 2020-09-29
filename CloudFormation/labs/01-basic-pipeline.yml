@@ -45,6 +45,7 @@ Parameters:
     Description: A name for the production WordPress stack change set
     Type: String
   Email:
+    Default: gaurav804jain@gmail.com
     Description: The email address where CodePipeline sends pipeline notifications
     Type: String
 

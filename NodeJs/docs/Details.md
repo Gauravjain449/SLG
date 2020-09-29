@@ -38,4 +38,15 @@ c. Since Node.js is single-threaded, CPU intensive tasks is not its strong suit
 
 10. JavaScript is internally compiled by V8 with just-in-time (JIT) compilation to speed up the execution.
 
-11. 
+11. The process core module provides a handy method that allows you to programmatically exit from a Node.js program: process.exit().
+
+12. Note: REPL also known as Read Evaluate Print Loop is a programming language environment(Basically a console window) that takes single expression as user input and returns the result back to the console after execution.
+
+13. > console.log('test')
+test
+undefined
+>
+
+The first value, test, is the output we told the console to print, then we get undefined which is the return value of running console.log().
+
+14. 
