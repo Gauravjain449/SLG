@@ -1,1 +1,1 @@
-https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-codepipeline.html
+https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html

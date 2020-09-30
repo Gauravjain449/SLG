@@ -49,4 +49,16 @@ undefined
 
 The first value, test, is the output we told the console to print, then we get undefined which is the return value of running console.log().
 
-14. 
+14. What's the difference between module.exports and exports?
+a. The first exposes the object it points to. The latter exposes the properties of the object it points to.
+
+e.g. 
+module.exports = car
+
+exports.car = car
+
+15. The package-lock.json file needs to be committed to your Git repository, so it can be fetched by other people, if the project is public or you have collaborators, or if you use Git as a source for deployments.
+
+16. You need to set the --production flag (npm install --production) to avoid installing those development dependencies.
+
+17. 

@@ -1,9 +1,7 @@
-https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-questions
+https://medium.com/@vigowebs/frequently-asked-node-js-interview-questions-and-answers-b74fa1f20678
 
-Intermediate Node.js Interview Questions
+What is EventEmitter in Node.js?
 
 ---
 
-https://nodejs.dev/learn
-
-https://nodejs.dev/learn/accept-input-from-the-command-line-in-nodejs
+https://nodejs.dev/learn/the-npx-nodejs-package-runner
