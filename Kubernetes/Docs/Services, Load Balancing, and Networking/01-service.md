@@ -106,7 +106,41 @@ d. DNS is automatically configured depends on whether the Service has selectors:
  -- CNAME records for ExternalName-type Services.
  -- A records for any Endpoints that share a name with the Service, for all other types
 
- 25. 
+ 25. # Publishing Services (ServiceTypes)
+
+ a. ClusterIP: Service only reachable from within the cluster. This is the default ServiceType.
+
+ b. NodePort: You'll be able to contact the NodePort Service, from outside the cluster, by requesting <NodeIP>:<NodePort>.
+ Range: default: 30000-32767
+
+ # Ref: 01-service.yml --- 04 Node port
+
+ c. LoadBalancer: Exposes the Service externally using a cloud provider's load balancer.
+
+ d. ExternalName: Maps the Service to the contents of the externalName field (e.g. foo.bar.example.com), by returning a CNAME record with its value. No proxying of any kind is set up. 
+
+ Note: You need either kube-dns version 1.7 or CoreDNS version 0.0.8 or higher to use the ExternalName type.
+
+ 26. You can also use Ingress to expose your Service. Ingress is not a Service type, but it acts as the entry point for your cluster. It lets you consolidate your routing rules into a single resource as it can expose multiple services under the same IP address.
+
+ 27. External IPs: 
+ a. If there are external IPs that route to one or more cluster nodes, Kubernetes Services can be exposed on those externalIPs. Traffic that ingresses into the cluster with the external IP (as destination IP), on the Service port, will be routed to one of the Service endpoints. externalIPs are not managed by Kubernetes and are the responsibility of the cluster administrator.
+
+In the Service spec, externalIPs can be specified along with any of the ServiceTypes. In the example below, "my-service" can be accessed by clients on "80.11.12.10:80" (externalIP:port)
+
+# Ref: 01-service.yml --- 05
+
+28. # Shortcomings
+a. The Type field is designed as nested functionality - each level adds to the previous. This is not strictly required on all cloud providers (e.g. Google Compute Engine does not need to allocate a NodePort to make LoadBalancer work, but AWS does) but the current API requires it
+
+29. # Supported protocols
+a. TCP: You can use TCP for any kind of Service, and it's the default network protocol.
+
+b. UDP: User Datagram Protocol  : You can use UDP for most Services. For type=LoadBalancer Services, UDP support depends on the cloud provider offering this facility
+
+c. HTTP
+
+d. SCTP: Stream Control Transmission Protocol (SCTP)
 
 
 

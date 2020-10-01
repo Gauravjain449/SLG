@@ -1,1 +1,1 @@
-https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html
+https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html

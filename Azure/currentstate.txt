@@ -1,1 +1,1 @@
-https://docs.microsoft.com/en-in/azure/devops/pipelines/targets/azure-sqldb?view=azure-devops&tabs=yaml
+https://docs.microsoft.com/en-in/azure/devops/pipelines/release/?view=azure-devops

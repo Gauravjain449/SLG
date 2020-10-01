@@ -19,3 +19,11 @@ docker volume rm `docker volume ls -q -f dangling=true`
 
 7. docker build --progress=plain .
 
+8. which-docker
+output: /usr/local/bin/docker (show the path of docker)
+
+9. docker swarm init 
+activate the docker swarm
+
+10. docker system info
+
