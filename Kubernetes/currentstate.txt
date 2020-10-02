@@ -1,1 +1,1 @@
-https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/

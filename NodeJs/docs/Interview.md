@@ -116,6 +116,48 @@ b. Inserting the statement debugger; into the source code of a script will enabl
 26. What is process.nextTick()
 a. https://medium.com/@vsvaibhav2016/process-nexttick-in-node-js-816796b82db6
 
+27. What is EventEmitter in Node.js?
+a. All objects that emit events are instances of the EventEmitter class. These objects expose an eventEmitter.on() function that allows one or more functions to be attached to named events emitted by the object.
+
+b. When the EventEmitter object emits an event, all of the functions attached to that specific event are called synchronously.
+
+# Ref: 1_Te3ctZkSEqXKFGhj1Tn9MA.jpeg
+
+28. What is Streams in Node.js?
+a. Streams are pipes that let you easily read data from a source and pipe it to a destination. Simply put, a stream is nothing but an EventEmitter and implements some specials methods. Depending on the methods implemented, a stream becomes Readable, Writable, or Duplex (both readable and writable).
+
+b. For example, if we want to read data from a file, the best way to do it from a stream is to listen to data event and attach a callback. When a chunk of data is available, the readable stream emits a data event and your callback executes. Take a look at the following snippet:
+
+# Ref: 1_CPRmtq0khNvHLcJX7F09iA.jpeg
+
+c. Types of streams are: Readable, Writable, Duplex and Transform.
+
+29. What is the difference between readFile vs createReadStream in Node.js?
+
+a. ReadFile — is for asynchronously reads the entire contents of a file. It will read the file completely into memory before making it available to the User. readFileSync is synchronous version of readFile.
+
+b. CreateReadStream — It will read the file in chunks of the default size 64 kb which is specified before hand.
+
+30. What is crypto in Node.js? How do you cipher the secured information in Node.js?
+a. The crypto module in Node.js provides cryptographic functionality that includes a set of wrappers for OpenSSL's hash, HMAC, cipher, decipher, sign and verify functions.
+
+# Ref: 1_usB3iZ9uwyP3uMnyb8GY4w.png
+
+31. What is the use of DNS module in Node.js?
+a. dns module which provide underlying system's name resolution and DNS look up facilities.
+
+32. What are the security mechanisms available in Node.js?
+a. Authentication :  In Node.js, authentication can be either session-based or token-based.  In session-based authentication, the user’s credentials are compared to the user account stored on the server and, in the event of successful validation, a session is started for the user. Whenever the session expires, the user needs to log in again. In token-based authentication, the user’s credentials are applied to generate a string called a token which is then associated with the user’s requests to the server.
+
+b. Error Handling 
+
+c. Request Validation
+
+d. Node.js Security Tools and Best Practices — We can use tools like helmet (protects our application by setting HTTP headers), csurf (validates tokens in incoming requests and rejects the invalid ones), node rate limiter (controls the rate of repeated requests. This function can protect you from brute force attacks) and cors (enables cross-origin resource sharing).
+
+33. 
+
+
 
 
 

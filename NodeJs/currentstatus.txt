@@ -4,4 +4,4 @@ What is EventEmitter in Node.js?
 
 ---
 
-https://nodejs.dev/learn/the-npx-nodejs-package-runner
+https://nodejs.dev/learn/the-nodejs-event-loop
