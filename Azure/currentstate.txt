@@ -1,1 +1,1 @@
-https://docs.microsoft.com/en-in/azure/devops/pipelines/apps/cd/deploy-webdeploy-webapps?view=azure-devops
+https://docs.microsoft.com/en-in/azure/devops/pipelines/targets/cosmos-db?view=azure-devops
