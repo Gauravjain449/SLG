@@ -84,5 +84,14 @@ b. If you are on Docker 17.06.1 or higher and want to also prune volumes, add th
 
 docker system prune --volumes
 
-20. 
+20. docker stats redis1 redis2
+
+# https://docs.docker.com/config/containers/resource_constraints/
+21. docker run -it --cpus=".5" ubuntu /bin/bash
+
+22. docker run -it --rm --gpus all ubuntu nvidia-smi
+
+
+
+
 
