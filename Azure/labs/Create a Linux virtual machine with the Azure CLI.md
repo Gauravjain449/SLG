@@ -17,14 +17,22 @@ az vm create \
 
 az vm open-port --port 80 --resource-group myResourceGroup --name myVM
 
-ssh azureuser@13.72.87.200
+ssh azureuser@52.172.173.240
 
 sudo apt-get -y update
 
 sudo apt-get -y install nginx
 
-on browser type http://13.72.87.200
+on browser type http://52.172.173.240
 
 az group delete --name myResourceGroup
 ---
+
+[Create a deployment group]
+
+1. sudo apt-get install -y libunwind8 libcurl3
+
+2. Add deployment group Script
+
+3. 
 
