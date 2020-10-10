@@ -36,3 +36,27 @@ If a Container allocates more memory than its limit, the Container becomes a can
 8.1 kubectl describe nodes
 
 9. [Specify a memory request that is too big for your Nodes]
+
+The output shows that the Pod status is PENDING. That is, the Pod is not scheduled to run on any Node, and it will remain in the PENDING state indefinitely:
+
+10.   [If you do not specify a memory limit]
+
+a. The Container is running in a namespace that has a default memory limit, and the Container is automatically assigned the default limit. 
+
+11. [Motivation for memory requests and limits]
+
+a. By configuring memory requests and limits for the Containers that run in your cluster, you can make efficient use of the memory resources available on your cluster's Nodes.
+
+b. By keeping a Pod's memory request low, you give the Pod a good chance of being scheduled. 
+
+12 . [CPU requests and limits]
+
+a. The Container is running in a namespace that has a default CPU limit, and the Container is automatically assigned the default limit. Cluster administrators can use a LimitRange to specify a default value for the CPU limit
+
+b. By configuring the CPU requests and limits of the Containers that run in your cluster, you can make efficient use of the CPU resources available on your cluster Nodes. 
+
+c. By keeping a Pod CPU request low, you give the Pod a good chance of being scheduled.
+
+13. [https://kubernetes.io/docs/tasks/configure-pod-container/configure-gmsa/]
+
+a. Configure Group Managed Service Accounts (GMSA) for Pods and containers that will run on Windows nodes.

@@ -1,4 +1,1 @@
-https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/
-
-
-Specify a memory request that is too big for your Nodes
+https://kubernetes.io/docs/tasks/configure-pod-container/share-process-namespace/
