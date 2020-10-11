@@ -1,0 +1,16 @@
+
+kubectl diff -f .
+
+kubectl scale deployment/nginx-deployment --replicas=2
+
+cat <<EOF >./patch-file.yaml
+spec:
+  template:
+    spec:
+      containers:
+      - name: patch-demo-ctr-2
+        image: redis
+
+EOF
+
+kubectl patch deployment patch-demo --patch "$(cat patch-file-tolerations.yaml)"
