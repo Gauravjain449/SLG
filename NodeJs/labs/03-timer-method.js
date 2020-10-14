@@ -15,8 +15,18 @@ console.log('1');
 for (let i = 0; i < 10; i++) {
   setTimeout(() => {
     console.log(i);
-  }, 5000);
+  }, 0);
 }
 // ---
+
+// ---
+setTimeout(() => {
+  console.log('setTimeout0');
+}, 0);
+
+setImmediate(() => {
+  console.log('setImmediateEnd');
+});
+
 
 

@@ -4,4 +4,13 @@ What is EventEmitter in Node.js?
 
 ---
 
-https://nodejs.dev/learn/the-nodejs-event-loop
+https://nodejs.dev/learn/reading-files-with-nodejs
+
+
+---
+
+[IMP Links]
+https://nodejs.org/docs/latest-v11.x/api/util.html#util_util_promisify_original
+
+https://nodejs.org/api/
+
