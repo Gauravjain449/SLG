@@ -1,0 +1,12 @@
+# Azure Un-managed Disk storage class 
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: cloud-ssd-slow
+provisioner: kubernetes.io/azure-disk
+parameters:
+  storageaccounttype: Standard_LRS
+  kind: managed
+  #location: eastus
+  #torageAccount: azure_storage_account_name

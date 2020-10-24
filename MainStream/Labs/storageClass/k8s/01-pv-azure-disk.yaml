@@ -1,0 +1,11 @@
+# Azure Un-managed Disk storage class 
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: cloud-ssd
+provisioner: kubernetes.io/azure-disk
+parameters:
+  skuName: Standard_LRS
+  #location: eastus
+  #torageAccount: azure_storage_account_name

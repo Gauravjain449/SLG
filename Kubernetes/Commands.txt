@@ -14,3 +14,5 @@ spec:
 EOF
 
 kubectl patch deployment patch-demo --patch "$(cat patch-file-tolerations.yaml)"
+
+minikube service frontend --url

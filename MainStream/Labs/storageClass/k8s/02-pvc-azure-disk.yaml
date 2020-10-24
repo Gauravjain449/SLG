@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: azure-disk-pvc-02
+  #namespace: foo
+spec:
+  storageClassName: "cloud-ssd-slow" 
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 9Gi
+      
+  
